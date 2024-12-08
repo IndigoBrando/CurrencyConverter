@@ -20,13 +20,14 @@ public class MainActivity extends AppCompatActivity {
     private Button convertButton;
     private TextView resultText;
 
-    private final String[] currencies = {"USD", "EUR", "INR", "JPY", "GBP"};
+    private final String[] currencies = {"USD", "EUR", "INR", "JPY", "GBP", "PHP"};
     private final double[][] exchangeRates = {
-            {1.0, 0.85, 74.50, 110.0, 0.73}, // USD to [USD, EUR, INR, JPY, GBP]
-            {1.18, 1.0, 87.65, 129.4, 0.85}, // EUR to [USD, EUR, INR, JPY, GBP]
-            {0.013, 0.011, 1.0, 1.48, 0.0098}, // INR to [USD, EUR, INR, JPY, GBP]
-            {0.0091, 0.0077, 0.67, 1.0, 0.0067}, // JPY to [USD, EUR, INR, JPY, GBP]
-            {1.37, 1.17, 102.7, 149.3, 1.0}  // GBP to [USD, EUR, INR, JPY, GBP]
+            {1.0, 0.85, 74.50, 110.0, 0.73, 56.0},  // USD to other exc rates
+            {1.18, 1.0, 87.65, 129.4, 0.85, 63.5},  // EUR to other exc rates
+            {0.013, 0.011, 1.0, 1.48, 0.0098, 0.75},  // INR to other ex rates
+            {0.0091, 0.0077, 0.67, 1.0, 0.0067, 0.39},  // JPY to other exc rates
+            {1.37, 1.17, 102.7, 149.3, 1.0, 68.0},  // GBP to other exc rates
+            {0.018, 0.016, 1.33, 2.56, 0.014, 1.0}   // PHP to other exc rates
     };
 
     @Override
